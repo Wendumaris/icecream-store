@@ -10,7 +10,9 @@ img {
 }
 
 body {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Roboto', sans-serif;
+  color: #263238;
+  line-height: 1.5;
 }
 
 body #bg {
@@ -57,19 +59,29 @@ body .menu {
   float: right;
 }
 
-body .menu a:hover {
+body .menu li:hover {
   color: #ffffff;
   background-color: #001033;
 }
 
-body .menu a {
-  clear: right;
+body .menu li {
   text-decoration: none;
   color: #ffffff;
-  margin: 0 5px;
+  padding: 0 5px;
   line-height: 70px;
-  display: inline-block;
-  width: 100px;
+  display: block;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+@media (min-width: 840px) {
+  body .menu li {
+    display: inline-block;
+    width: 100px;
+  }
 }
 
 body label {
@@ -184,6 +196,7 @@ body main section#primary a {
   text-align: center;
   margin: 50px auto o auto;
   padding: 15px;
+  transition: all 0.3s;
 }
 
 @media (min-width: 840px) {
@@ -202,6 +215,14 @@ body div section#intro {
   width: 70%;
   height: 400px;
   margin: 80px auto 80px;
+}
+
+body div section#intro .container {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
 }
 
 @media (min-width: 840px) {
@@ -271,6 +292,7 @@ body div section#bulk a {
   text-align: center;
   margin: 50px auto o auto;
   padding: 15px;
+  transition: all 0.3s;
 }
 
 @media (min-width: 840px) {
